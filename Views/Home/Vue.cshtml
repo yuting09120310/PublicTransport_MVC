@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    
+    <title>Vue</title>
+</head>
+<body>
+    <div id="wrapper">
+        {{ a }}
+    </div>
+
+    <script src="https://unpkg.com/vue@('@')next"></script>
+    <script>
+        let app = Vue.createApp({
+            data() {
+                return {
+                    a : 10,
+                }
+            },
+            methods: {
+
+            },
+            mounted() {
+
+            },
+        })
+
+        app.mount('#wrapper');
+    </script>
+</body>
+</html>
